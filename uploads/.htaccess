@@ -1,0 +1,6 @@
+# Blokir akses langsung ke file upload dan matikan eksekusi PHP.
+# File hanya dapat dilihat/diunduh lewat detail_penelitian.php (wajib login).
+Require all denied
+<FilesMatch "\.(php|phtml|php3|php4|php5|phps)$">
+    Require all denied
+</FilesMatch>
